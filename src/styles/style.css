@@ -84,6 +84,10 @@ body {
   overflow: hidden;
 }
 
+.food-card-picture {
+  background-color: aquamarine;
+}
+
 .food-card-info {
   padding: 5px;
 }
@@ -93,3 +97,4 @@ body {
   margin-bottom: 5px;
   cursor: pointer;
 }
+
