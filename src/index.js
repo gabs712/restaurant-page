@@ -1,7 +1,10 @@
 import './styles/reset.css'
 import './styles/style.css'
-import renderHome from './scripts/home'
-import {cleanContent} from './scripts/functions'
+
+import renderHome from './scripts/home.js'
+import renderMenu from './scripts/menu.js'
+import renderContact from './scripts/contact.js'
+import {cleanContent} from './scripts/functions.js'
 
 showHome()
 
@@ -17,7 +20,7 @@ renderHome()
 
 function showMenu() {
   cleanContent()
-  showMenu()
+  renderMenu()
 }
 
 function showContact() {
