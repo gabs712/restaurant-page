@@ -9,6 +9,7 @@ body {
   background-position: center bottom;
   min-height: 100vh;
   color: white;
+  padding-bottom: 50px;
 }
 
 .header {
@@ -47,12 +48,14 @@ body {
 }
 
 #content {
+  border-radius: 5px;
   background-color: var(--overlay );
   min-height: 430px;
   max-width: 800px;
   margin: 0 auto;
   margin-top: 50px;
-  padding: 15px;
+  padding-inline: 25px;
+  padding-block: 30px;
 }
 
 .restaurant-name {
@@ -67,4 +70,26 @@ body {
   margin-top: 20px;
 }
 
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 20px;
+}
 
+.food-card {
+  background-color: rgb(32, 178, 171);
+  justify-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.food-card-info {
+  padding: 5px;
+}
+
+.food-card-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
