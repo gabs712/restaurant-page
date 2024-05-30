@@ -1,5 +1,5 @@
 :root {
-  --overlay: rgba(0, 0, 0, 0.583);
+  --overlay: rgba(0, 0, 0, 0.688);
 }
 
 body {
@@ -8,6 +8,7 @@ body {
   background-repeat: no-repeat;
   background-position: center bottom;
   min-height: 100vh;
+  color: white;
 }
 
 .header {
@@ -32,9 +33,10 @@ body {
   background-color: transparent;
   position: relative;
   font-size: 1.1rem;
+  user-select: none;
 }
 
-.header-button:hover::after {
+.selected::after {
   content: '';
   position: absolute;
   background-color: rgb(225, 225, 225);
@@ -42,4 +44,25 @@ body {
   height: 2.5px;
   left: 0;
   bottom: 0;
+}
+
+#content {
+  background-color: var(--overlay );
+  min-height: 430px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 15px;
+}
+
+.restaurant-name {
+  text-align: center;
+  text-decoration: underline;
+  font-style: italic;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
+
+.restaurant-description {
+  margin-top: 20px;
 }
