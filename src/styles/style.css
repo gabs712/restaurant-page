@@ -1,5 +1,5 @@
 :root {
-  --overlay: rgba(0, 0, 0, 0.158);
+  --overlay: rgba(0, 0, 0, 0.583);
 }
 
 body {
@@ -8,23 +8,16 @@ body {
   background-repeat: no-repeat;
   background-position: center bottom;
   min-height: 100vh;
-  backdrop-filter: blur(0.8px);
-}
-
-.fog {
-  min-height: 100vh;
-  background-color: var(--overlay);
 }
 
 .header {
   display: flex;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.583);
+  background-color: var(--overlay);
   border-bottom: 1.8px solid rgba(65, 65, 65, 0.658);
 }
 
 .header-buttons {
-  /* background-color: aliceblue; */
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr 1fr 1fr;
