@@ -3,27 +3,27 @@ import './styles/style.css'
 
 import renderHome from './scripts/home.js'
 import renderMenu from './scripts/menu.js'
-// import renderContact from './scripts/contact.js'
+import renderContact from './scripts/contact.js'
 import {cleanContent} from './scripts/functions.js'
 
-// showMenu()
+showMenu()
 
-// document.querySelector('[data-home]').addEventListener('click', showHome)
-// document.querySelector('[data-menu]').addEventListener('click', showMenu)
-// // document.querySelector('[data-contact]').addEventListener('click', showContact)
+document.querySelector('[data-home]').addEventListener('click', showHome)
+document.querySelector('[data-menu]').addEventListener('click', showMenu)
+document.querySelector('[data-contact]').addEventListener('click', showContact)
 
 
-// function showHome() {
-// cleanContent()
-// renderHome()
-// }
+function showHome() {
+cleanContent()
+renderHome()
+}
 
-// function showMenu() {
-//   cleanContent()
-//   renderMenu()
-// }
+function showMenu() {
+  cleanContent()
+  renderMenu()
+}
 
-// // function showContact() {
-// //   cleanContent()
-// //   renderContact()
-// // }
+function showContact() {
+  cleanContent()
+  renderContact()
+}
